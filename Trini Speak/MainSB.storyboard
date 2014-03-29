@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Umf-cz-2Ih">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--OpeningVC-->
+        <scene sceneID="XFb-v0-0Wq">
+            <objects>
+                <viewController id="Umf-cz-2Ih" customClass="SMPOpeningVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E0M-QR-I7t"/>
+                        <viewControllerLayoutGuide type="bottom" id="TLc-X2-nAD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fPK-6M-Azj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trini Speak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U7-68-86L">
+                                <rect key="frame" x="0.0" y="20" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Superclarendon-Bold" family="Superclarendon" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAI-L2-iAf">
+                                <rect key="frame" x="105" y="77" width="111" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="30"/>
+                                <state key="normal" title="WORD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnWords:" destination="Umf-cz-2Ih" eventType="touchUpInside" id="Mse-aU-Xvn"/>
+                                    <segue destination="m3R-v7-KA7" kind="modal" identifier="letterSegue" modalTransitionStyle="flipHorizontal" id="Pgb-gc-Nc9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxk-MR-VCy">
+                                <rect key="frame" x="94" y="120" width="133" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="30"/>
+                                <state key="normal" title="PHRASE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPhrases:" destination="Umf-cz-2Ih" eventType="touchUpInside" id="K2m-uO-2VT"/>
+                                    <segue destination="m3R-v7-KA7" kind="modal" identifier="letterSegue" modalTransitionStyle="flipHorizontal" id="1PL-fB-zmP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AI1-hX-Le0">
+                                <rect key="frame" x="75" y="163" width="170" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="30"/>
+                                <state key="normal" title="CARNIVAL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCarnival:" destination="Umf-cz-2Ih" eventType="touchUpInside" id="HzL-7I-GDQ"/>
+                                    <segue destination="m3R-v7-KA7" kind="modal" identifier="letterSegue" modalTransitionStyle="flipHorizontal" id="PDH-TR-C5j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXl-Wv-cvU">
+                                <rect key="frame" x="65" y="206" width="190" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="30"/>
+                                <state key="normal" title="CHRISTMAS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnChristmas:" destination="Umf-cz-2Ih" eventType="touchUpInside" id="N08-op-DU7"/>
+                                    <segue destination="m3R-v7-KA7" kind="modal" identifier="letterSegue" modalTransitionStyle="flipHorizontal" id="lbj-QK-UpR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wua-Vk-onE">
+                                <rect key="frame" x="78" y="249" width="164" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="30"/>
+                                <state key="normal" title="PARABLES">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnParables:" destination="Umf-cz-2Ih" eventType="touchUpInside" id="XyO-Vf-MH6"/>
+                                    <segue destination="62q-jo-7P9" kind="modal" identifier="parablesSegue" modalTransitionStyle="flipHorizontal" id="WbK-Qy-kl5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUf-8R-RNE">
+                                <rect key="frame" x="82" y="505" width="156" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <state key="normal" title="Other Stuff">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jWI-5G-XeL" kind="modal" id="N1d-UT-x81"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0085617190579999995" blue="0.19503127040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TLc-X2-nAD" firstAttribute="top" secondItem="QUf-8R-RNE" secondAttribute="bottom" constant="20" id="qcy-oh-HPQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7t-k6-6nn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="19"/>
+        </scene>
+        <!--View Controller - T&T Tidbits-->
+        <scene sceneID="dxQ-l8-1pt">
+            <objects>
+                <viewController id="5Bl-s2-XxR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xNQ-kW-tbP"/>
+                        <viewControllerLayoutGuide type="bottom" id="HPU-TJ-FET"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E51-0y-gsu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q96-T6-q18">
+                                <rect key="frame" x="81" y="249" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Favorites - Back Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Uy4-qK-J0Q" kind="unwind" unwindAction="returnToMain:" id="l0T-Cq-biR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="T&amp;T Tidbits" id="7AM-FU-xW9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Q4-zT-B1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Uy4-qK-J0Q" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1106" y="-395"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LzZ-8c-vRe">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="jWI-5G-XeL" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="siR-vt-Bkr">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5Bl-s2-XxR" kind="relationship" relationship="viewControllers" id="pO9-zD-pqg"/>
+                        <segue destination="7g1-mA-GMO" kind="relationship" relationship="viewControllers" id="OGf-lw-La4"/>
+                        <segue destination="obX-Gz-UDM" kind="relationship" relationship="viewControllers" id="wj7-I0-sCv"/>
+                        <segue destination="MsC-Ab-r6e" kind="relationship" relationship="viewControllers" id="xYR-TG-EoD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imw-0B-3Oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="19"/>
+        </scene>
+        <!--Send SlangVC - Send Slang-->
+        <scene sceneID="kJs-Dl-MZ6">
+            <objects>
+                <viewController id="MsC-Ab-r6e" customClass="SMPSendSlangVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TOm-As-cUO"/>
+                        <viewControllerLayoutGuide type="bottom" id="w4i-jV-X9d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tI9-xH-ErA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send Slang" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBe-IJ-nVK">
+                                <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djd-IB-tub">
+                                <rect key="frame" x="0.0" y="404" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="SEND SLANG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSendSlang:" destination="MsC-Ab-r6e" eventType="touchUpInside" id="JQb-5g-kau"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPR-ms-fNs">
+                                <rect key="frame" x="240" y="404" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHome:" destination="MsC-Ab-r6e" eventType="touchUpInside" id="ciA-QJ-abo"/>
+                                    <segue destination="bum-Oo-le4" kind="unwind" unwindAction="returnToMain:" id="mFP-UR-J2I"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="oca-L4-tqk">
+                                <rect key="frame" x="20" y="58" width="280" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Hey, got a Trinidad Word, Phrase, Carnival item, Christmas item or Parable that we did not put in here?
+
+Send us an email with the Trini version and its English meaning and we will verify and add it in a future update.
+
+We will also give you credit for bringing it to our attention by adding your name in the English version field as, “submitted by Your Name”. How cool is that to have your name in an app! :-)
+
+So click the “Send Slang” button below to bring your mail program up and send us your suggested Trini Speak.</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Send Slang" id="9uW-PE-URq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exH-DD-grk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bum-Oo-le4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="-742"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hdF-qt-HVH">
+            <objects>
+                <viewController id="obX-Gz-UDM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eRm-E8-uBo"/>
+                        <viewControllerLayoutGuide type="bottom" id="fa1-J2-rvB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qea-aR-xZz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="Y4Y-qA-xcv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbH-BN-oYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="742"/>
+        </scene>
+        <!--FavoritesVC - Favorites-->
+        <scene sceneID="xef-dj-R3E">
+            <objects>
+                <viewController id="7g1-mA-GMO" customClass="SMPFavoritesVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dq7-kA-7Wq"/>
+                        <viewControllerLayoutGuide type="bottom" id="M1Y-5J-XpP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BE3-2Z-6PX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsz-RE-V0l">
+                                <rect key="frame" x="240" y="417" width="80" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHome:" destination="7g1-mA-GMO" eventType="touchUpInside" id="EAa-d6-Qb2"/>
+                                    <segue destination="AcT-wU-WWc" kind="unwind" unwindAction="returnToMain:" id="VxQ-Td-E9A"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUu-uM-aas">
+                                <rect key="frame" x="0.0" y="265" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7g1-mA-GMO" id="tfv-iF-IPU"/>
+                                    <outlet property="delegate" destination="7g1-mA-GMO" id="ssj-i1-SBr"/>
+                                </connections>
+                            </pickerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hhf-GG-z2f">
+                                <rect key="frame" x="0.0" y="73" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xm2-iw-NyJ">
+                                <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6N-FP-baq">
+                                <rect key="frame" x="50" y="209" width="220" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="Remove From Favorites">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRemoveFromFav:" destination="7g1-mA-GMO" eventType="touchUpInside" id="fXE-NA-JAx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0085617190579999995" blue="0.19503127040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xm2-iw-NyJ" secondAttribute="trailing" constant="20" id="19U-xN-n3k"/>
+                            <constraint firstAttribute="trailing" secondItem="zUu-uM-aas" secondAttribute="trailing" id="4va-VR-k15"/>
+                            <constraint firstItem="M1Y-5J-XpP" firstAttribute="top" secondItem="zUu-uM-aas" secondAttribute="bottom" constant="92" id="60A-MS-ReP"/>
+                            <constraint firstAttribute="trailing" secondItem="gsz-RE-V0l" secondAttribute="trailing" id="FHx-ae-Mej"/>
+                            <constraint firstItem="xm2-iw-NyJ" firstAttribute="leading" secondItem="BE3-2Z-6PX" secondAttribute="leading" constant="20" id="KIF-CW-bNG"/>
+                            <constraint firstItem="zUu-uM-aas" firstAttribute="leading" secondItem="BE3-2Z-6PX" secondAttribute="leading" id="M11-ou-1KK"/>
+                            <constraint firstItem="M1Y-5J-XpP" firstAttribute="top" secondItem="gsz-RE-V0l" secondAttribute="bottom" constant="62" id="mdb-wm-g9g"/>
+                            <constraint firstItem="gsz-RE-V0l" firstAttribute="leading" secondItem="BE3-2Z-6PX" secondAttribute="leading" constant="240" id="r4W-hj-ZGM"/>
+                            <constraint firstItem="hhf-GG-z2f" firstAttribute="top" secondItem="xm2-iw-NyJ" secondAttribute="bottom" constant="23" id="xrJ-aS-Kgg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" id="3UJ-w7-TbM"/>
+                    <connections>
+                        <outlet property="pickerView" destination="zUu-uM-aas" id="rvl-o2-tSI"/>
+                        <outlet property="txtMeaning" destination="hhf-GG-z2f" id="n8o-bO-T7R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejg-N4-mqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AcT-wU-WWc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1106" y="390"/>
+        </scene>
+        <!--ParablesVC-->
+        <scene sceneID="D0T-I6-xjC">
+            <objects>
+                <viewController id="62q-jo-7P9" customClass="SMPParablesVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G2t-B3-lJw"/>
+                        <viewControllerLayoutGuide type="bottom" id="VpY-ND-6z8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aIh-wt-Wog">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Msh-fW-fBd">
+                                <rect key="frame" x="0.0" y="57" width="320" height="415"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="LC9-Vr-gtb">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LC9-Vr-gtb" id="hM3-2v-qcr">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="fSn-oU-g0U" kind="modal" identifier="parableDetail" modalTransitionStyle="partialCurl" id="Qhd-IS-VHF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="62q-jo-7P9" id="fB9-K1-LMC"/>
+                                    <outlet property="delegate" destination="62q-jo-7P9" id="UGJ-3q-dfg"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmu-Z0-plh">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Superclarendon-Bold" family="Superclarendon" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJm-5w-Tyo">
+                                <rect key="frame" x="116" y="518" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHome:" destination="62q-jo-7P9" eventType="touchUpInside" id="RbI-k2-JnW"/>
+                                    <segue destination="Ebw-Bo-grf" kind="unwind" unwindAction="returnToMain:" id="cJk-Zn-XSj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Msh-fW-fBd" firstAttribute="top" secondItem="mmu-Z0-plh" secondAttribute="bottom" constant="16" id="Dbx-fM-yfb"/>
+                            <constraint firstItem="eJm-5w-Tyo" firstAttribute="top" secondItem="Msh-fW-fBd" secondAttribute="bottom" constant="46" id="Khb-wQ-DES"/>
+                            <constraint firstItem="VpY-ND-6z8" firstAttribute="top" secondItem="eJm-5w-Tyo" secondAttribute="bottom" constant="20" id="bPu-XI-4zl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCategory" destination="mmu-Z0-plh" id="k0d-ec-8Ja"/>
+                        <outlet property="tableView" destination="Msh-fW-fBd" id="Pwr-V1-YIE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I74-vt-24j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ebw-Bo-grf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="398"/>
+        </scene>
+        <!--Parables DetailsVC-->
+        <scene sceneID="R4W-pR-bXh">
+            <objects>
+                <viewController id="fSn-oU-g0U" customClass="SMPParablesDetailsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a2j-2g-8EV"/>
+                        <viewControllerLayoutGuide type="bottom" id="I8r-nl-6n7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I7q-1S-JYn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jiq-3L-nvM">
+                                <rect key="frame" x="20" y="518" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="fSn-oU-g0U" eventType="touchUpInside" id="3fl-Ox-suk"/>
+                                    <segue destination="AmM-Rc-VPI" kind="unwind" unwindAction="returnToParableList:" id="3CZ-95-uiT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h7-hX-At5">
+                                <rect key="frame" x="207" y="518" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHome:" destination="fSn-oU-g0U" eventType="touchUpInside" id="M74-8d-Zyu"/>
+                                    <segue destination="AmM-Rc-VPI" kind="unwind" unwindAction="returnToMain:" id="iab-w6-l6f"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wfj-Ly-GG4">
+                                <rect key="frame" x="0.0" y="129" width="320" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0085617190579999995" blue="0.19503127040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I8r-nl-6n7" firstAttribute="top" secondItem="3h7-hX-At5" secondAttribute="bottom" constant="20" id="K3z-6a-ip9"/>
+                            <constraint firstItem="I8r-nl-6n7" firstAttribute="top" secondItem="Jiq-3L-nvM" secondAttribute="bottom" constant="20" id="O92-YB-VJK"/>
+                            <constraint firstItem="wfj-Ly-GG4" firstAttribute="top" secondItem="a2j-2g-8EV" secondAttribute="bottom" constant="109" id="p6t-Va-5RW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtViewParableDetail" destination="wfj-Ly-GG4" id="v29-4x-Mnf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hR-bg-oJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AmM-Rc-VPI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="398"/>
+        </scene>
+        <!--LetterVC-->
+        <scene sceneID="sYd-vp-8v5">
+            <objects>
+                <viewController id="m3R-v7-KA7" customClass="SMPLetterVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z4X-qX-ejz"/>
+                        <viewControllerLayoutGuide type="bottom" id="lGu-1r-d5T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g0C-G1-ag9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n89-NL-kOV">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Superclarendon-Bold" family="Superclarendon" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avn-IA-Xqc">
+                                <rect key="frame" x="20" y="49" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnA:" destination="m3R-v7-KA7" eventType="touchUpInside" id="svI-5Z-SyH"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="Hcq-C2-xQe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-bi-A6R">
+                                <rect key="frame" x="260" y="49" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="E">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnE:" destination="m3R-v7-KA7" eventType="touchUpInside" id="Jmf-RN-BbG"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="VAU-1e-q9M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOR-Me-urO">
+                                <rect key="frame" x="140" y="49" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnC:" destination="m3R-v7-KA7" eventType="touchUpInside" id="35y-hc-SgM"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="RY2-R1-vNX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aZ-EP-Atk">
+                                <rect key="frame" x="80" y="49" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnB:" destination="m3R-v7-KA7" eventType="touchUpInside" id="z8v-4p-EyM"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="kjn-Hx-4vm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh4-bw-phj">
+                                <rect key="frame" x="200" y="49" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="D">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnD:" destination="m3R-v7-KA7" eventType="touchUpInside" id="Bfp-fe-Wge"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="Nah-aI-WPu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crw-yI-0Yh">
+                                <rect key="frame" x="20" y="102" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="F">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnF:" destination="m3R-v7-KA7" eventType="touchUpInside" id="3cd-Ny-x3S"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="I0z-iB-Awz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgN-ud-YLC">
+                                <rect key="frame" x="260" y="102" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="J">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnJ:" destination="m3R-v7-KA7" eventType="touchUpInside" id="GRt-i2-q9p"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="p7i-7n-OY0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLk-4x-ckV">
+                                <rect key="frame" x="140" y="102" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="H">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnH:" destination="m3R-v7-KA7" eventType="touchUpInside" id="Xym-vh-gDF"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="83E-Cp-jw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq5-a8-Hbi">
+                                <rect key="frame" x="80" y="102" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="G">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnG:" destination="m3R-v7-KA7" eventType="touchUpInside" id="OPu-Ak-f8B"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="FQW-nd-ssO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ish-xa-Q8a">
+                                <rect key="frame" x="200" y="102" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="I">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnI:" destination="m3R-v7-KA7" eventType="touchUpInside" id="xde-mv-Hcw"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="MjO-ib-Oo7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78o-Wv-Ewv">
+                                <rect key="frame" x="20" y="155" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="K">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnK:" destination="m3R-v7-KA7" eventType="touchUpInside" id="fpr-9M-zTg"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="1wv-fc-DeS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcx-xO-jMp">
+                                <rect key="frame" x="260" y="155" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="O">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnO:" destination="m3R-v7-KA7" eventType="touchUpInside" id="c3K-Li-ASM"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="ugw-0g-zye"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEa-N5-d1y">
+                                <rect key="frame" x="140" y="155" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="M">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnM:" destination="m3R-v7-KA7" eventType="touchUpInside" id="yko-ge-agt"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="h4G-yH-CdR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-C0-J7d">
+                                <rect key="frame" x="80" y="155" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="L">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnL:" destination="m3R-v7-KA7" eventType="touchUpInside" id="4g7-wg-b6l"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="Yj7-aJ-Yh4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9F-KN-z8N">
+                                <rect key="frame" x="200" y="155" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="N">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnN:" destination="m3R-v7-KA7" eventType="touchUpInside" id="ffm-We-Bcu"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="wzw-Ev-OXw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-Oi-7Eo">
+                                <rect key="frame" x="20" y="208" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="P">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnP:" destination="m3R-v7-KA7" eventType="touchUpInside" id="aeb-Fg-5aW"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="eo8-XO-BPx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftd-VF-fUL">
+                                <rect key="frame" x="260" y="208" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="T">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnT:" destination="m3R-v7-KA7" eventType="touchUpInside" id="RmI-7K-Od9"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="4QW-Xm-so0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fg-uN-LLr">
+                                <rect key="frame" x="140" y="208" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="R">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnR:" destination="m3R-v7-KA7" eventType="touchUpInside" id="sf5-Zn-6J2"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="xrC-Pn-n6t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kf-Wk-W4h">
+                                <rect key="frame" x="80" y="208" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="Q">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnQ:" destination="m3R-v7-KA7" eventType="touchUpInside" id="vNP-Sy-e2C"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="uP1-Kh-Oju"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPn-Lf-08o">
+                                <rect key="frame" x="200" y="208" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="S">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnS:" destination="m3R-v7-KA7" eventType="touchUpInside" id="SwJ-jc-0NH"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="JNM-Yi-Ov7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e5-VD-Czh">
+                                <rect key="frame" x="20" y="266" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="U">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnU:" destination="m3R-v7-KA7" eventType="touchUpInside" id="K6h-Qk-d6y"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="lTs-z9-Mar"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0e-wJ-1Nu">
+                                <rect key="frame" x="260" y="266" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="Y">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnY:" destination="m3R-v7-KA7" eventType="touchUpInside" id="33K-hK-LUH"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="xR2-BY-5bS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkG-rO-1s6">
+                                <rect key="frame" x="140" y="266" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="W">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnW:" destination="m3R-v7-KA7" eventType="touchUpInside" id="pxh-iY-HDX"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="AlI-k7-5Nf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDC-zP-qi6">
+                                <rect key="frame" x="80" y="266" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="V">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnV:" destination="m3R-v7-KA7" eventType="touchUpInside" id="ncq-e1-Bg3"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="DY2-QR-Fds"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWc-yt-0Fz">
+                                <rect key="frame" x="200" y="266" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnX:" destination="m3R-v7-KA7" eventType="touchUpInside" id="UHt-as-NrI"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="Owa-cw-blb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE3-CL-xaa">
+                                <rect key="frame" x="140" y="324" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="Z">
+                                    <color key="titleColor" red="1" green="0.039345490570000002" blue="0.036260015700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnZ:" destination="m3R-v7-KA7" eventType="touchUpInside" id="1mx-2Y-W5t"/>
+                                    <segue destination="2O1-YF-OkD" kind="modal" identifier="wpcMeaningSegue" modalTransitionStyle="partialCurl" id="5jv-GP-yVu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgM-t6-irU">
+                                <rect key="frame" x="116" y="508" width="88" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHome:" destination="m3R-v7-KA7" eventType="touchUpInside" id="kT9-1q-2nR"/>
+                                    <segue destination="M5d-Jf-FnF" kind="unwind" unwindAction="returnToMain:" id="qAu-Bp-DO0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lGu-1r-d5T" firstAttribute="top" secondItem="hgM-t6-irU" secondAttribute="bottom" constant="20" id="kfF-NK-iwM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCategory" destination="n89-NL-kOV" id="uyW-Qw-1aW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwv-qV-WJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="M5d-Jf-FnF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="-303"/>
+        </scene>
+        <!--DetailsVC-->
+        <scene sceneID="ioN-fi-FqC">
+            <objects>
+                <viewController id="2O1-YF-OkD" customClass="SMPWPCDetailsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XeT-2y-o9r"/>
+                        <viewControllerLayoutGuide type="bottom" id="680-qU-eCW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Zc-Sv-nNU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5B-7w-eAV">
+                                <rect key="frame" x="249" y="47" width="70" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v6Y-Oz-qD1">
+                                <rect key="frame" x="-1" y="92" width="320" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Omk-Cz-iyg">
+                                <rect key="frame" x="-1" y="386" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2O1-YF-OkD" id="JNa-k7-5UU"/>
+                                    <outlet property="delegate" destination="2O1-YF-OkD" id="QqY-bg-axI"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GO-Ib-6t1">
+                                <rect key="frame" x="-1" y="508" width="80" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="2O1-YF-OkD" eventType="touchUpInside" id="myh-1O-yv7"/>
+                                    <segue destination="W8S-kk-Ck5" kind="unwind" unwindAction="returnToLetterList:" id="VlV-2M-7YS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ll-NN-tqQ">
+                                <rect key="frame" x="241" y="508" width="80" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHome:" destination="2O1-YF-OkD" eventType="touchUpInside" id="Wcx-LP-6gp"/>
+                                    <segue destination="W8S-kk-Ck5" kind="unwind" unwindAction="returnToMain:" id="ggs-qu-wnh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El2-qT-6vr">
+                                <rect key="frame" x="79" y="230" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="Add to Favorites">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddToFavs:" destination="2O1-YF-OkD" eventType="touchUpInside" id="x9c-uj-Nof"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0085617190579999995" blue="0.19503127040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="680-qU-eCW" firstAttribute="top" secondItem="1GO-Ib-6t1" secondAttribute="bottom" constant="20" id="4M8-Yz-kr4"/>
+                            <constraint firstItem="680-qU-eCW" firstAttribute="top" secondItem="Omk-Cz-iyg" secondAttribute="bottom" constant="20" id="gPu-OC-PPC"/>
+                            <constraint firstItem="680-qU-eCW" firstAttribute="top" secondItem="2Ll-NN-tqQ" secondAttribute="bottom" constant="20" id="npd-nn-Nla"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblLetter" destination="U5B-7w-eAV" id="922-j0-7uJ"/>
+                        <outlet property="pickerView" destination="Omk-Cz-iyg" id="x76-ov-ndd"/>
+                        <outlet property="txtMeaning" destination="v6Y-Oz-qD1" id="E29-Qr-8DF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWe-XH-Abe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="W8S-kk-Ck5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="-303"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="PDH-TR-C5j"/>
+        <segue reference="JNM-Yi-Ov7"/>
+    </inferredMetricsTieBreakers>
+</document>

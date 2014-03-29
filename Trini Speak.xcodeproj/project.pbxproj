@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE012EB718E25A6300440131 /* SMPFavoritesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE012EB618E25A6300440131 /* SMPFavoritesVC.m */; };
+		BE6ED57C18E08A57009088E2 /* Trini_Speak.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BE6ED57B18E08A57009088E2 /* Trini_Speak.sqlite */; };
+		BE92678D18DFA82B00E4FDE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE92678C18DFA82B00E4FDE1 /* Foundation.framework */; };
+		BE92678F18DFA82B00E4FDE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE92678E18DFA82B00E4FDE1 /* CoreGraphics.framework */; };
+		BE92679118DFA82B00E4FDE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE92679018DFA82B00E4FDE1 /* UIKit.framework */; };
+		BE92679318DFA82B00E4FDE1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE92679218DFA82B00E4FDE1 /* CoreData.framework */; };
+		BE92679918DFA82B00E4FDE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE92679718DFA82B00E4FDE1 /* InfoPlist.strings */; };
+		BE92679B18DFA82B00E4FDE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE92679A18DFA82B00E4FDE1 /* main.m */; };
+		BE92679F18DFA82B00E4FDE1 /* SMPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE92679E18DFA82B00E4FDE1 /* SMPAppDelegate.m */; };
+		BE9267A218DFA82B00E4FDE1 /* Trini_Speak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE9267A018DFA82B00E4FDE1 /* Trini_Speak.xcdatamodeld */; };
+		BE9267A418DFA82B00E4FDE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9267A318DFA82B00E4FDE1 /* Images.xcassets */; };
+		BE9267AB18DFA82B00E4FDE1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9267AA18DFA82B00E4FDE1 /* XCTest.framework */; };
+		BE9267AC18DFA82B00E4FDE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE92678C18DFA82B00E4FDE1 /* Foundation.framework */; };
+		BE9267AD18DFA82B00E4FDE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE92679018DFA82B00E4FDE1 /* UIKit.framework */; };
+		BE9267AE18DFA82B00E4FDE1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE92679218DFA82B00E4FDE1 /* CoreData.framework */; };
+		BE9267B618DFA82B00E4FDE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE9267B418DFA82B00E4FDE1 /* InfoPlist.strings */; };
+		BE9267B818DFA82B00E4FDE1 /* Trini_SpeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267B718DFA82B00E4FDE1 /* Trini_SpeakTests.m */; };
+		BE9267C218DFA84A00E4FDE1 /* MainSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9267C118DFA84A00E4FDE1 /* MainSB.storyboard */; };
+		BE9267C518DFA8B000E4FDE1 /* SMPOpeningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267C418DFA8B000E4FDE1 /* SMPOpeningVC.m */; };
+		BE9267C818DFA8EB00E4FDE1 /* SMPParablesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267C718DFA8EB00E4FDE1 /* SMPParablesVC.m */; };
+		BE9267CB18DFA91900E4FDE1 /* SMPLetterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267CA18DFA91900E4FDE1 /* SMPLetterVC.m */; };
+		BE9267D118DFA97100E4FDE1 /* SMPWPCDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267D018DFA97100E4FDE1 /* SMPWPCDetailsVC.m */; };
+		BE9267D418DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267D318DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m */; };
+		BE9267D718DFC3E300E4FDE1 /* TriniDict.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267D618DFC3E300E4FDE1 /* TriniDict.m */; };
+		BED3DBE118E6100000692EEF /* SMPSendSlangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BED3DBE018E6100000692EEF /* SMPSendSlangVC.m */; };
+		BEF8FB9018E6283F008BB7D1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF8FB8F18E6283F008BB7D1 /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE9267AF18DFA82B00E4FDE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE92678118DFA82B00E4FDE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE92678818DFA82B00E4FDE1;
+			remoteInfo = "Trini Speak";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE012EB518E25A6300440131 /* SMPFavoritesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPFavoritesVC.h; sourceTree = "<group>"; };
+		BE012EB618E25A6300440131 /* SMPFavoritesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPFavoritesVC.m; sourceTree = "<group>"; };
+		BE6ED57B18E08A57009088E2 /* Trini_Speak.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trini_Speak.sqlite; sourceTree = "<group>"; };
+		BE92678918DFA82B00E4FDE1 /* Trini Speak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trini Speak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE92678C18DFA82B00E4FDE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE92678E18DFA82B00E4FDE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE92679018DFA82B00E4FDE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE92679218DFA82B00E4FDE1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BE92679618DFA82B00E4FDE1 /* Trini Speak-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Trini Speak-Info.plist"; sourceTree = "<group>"; };
+		BE92679818DFA82B00E4FDE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE92679A18DFA82B00E4FDE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE92679C18DFA82B00E4FDE1 /* Trini Speak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trini Speak-Prefix.pch"; sourceTree = "<group>"; };
+		BE92679D18DFA82B00E4FDE1 /* SMPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPAppDelegate.h; sourceTree = "<group>"; };
+		BE92679E18DFA82B00E4FDE1 /* SMPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMPAppDelegate.m; sourceTree = "<group>"; };
+		BE9267A118DFA82B00E4FDE1 /* Trini_Speak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trini_Speak.xcdatamodel; sourceTree = "<group>"; };
+		BE9267A318DFA82B00E4FDE1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE9267A918DFA82B00E4FDE1 /* Trini SpeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trini SpeakTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9267AA18DFA82B00E4FDE1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BE9267B318DFA82B00E4FDE1 /* Trini SpeakTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Trini SpeakTests-Info.plist"; sourceTree = "<group>"; };
+		BE9267B518DFA82B00E4FDE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE9267B718DFA82B00E4FDE1 /* Trini_SpeakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trini_SpeakTests.m; sourceTree = "<group>"; };
+		BE9267C118DFA84A00E4FDE1 /* MainSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainSB.storyboard; sourceTree = "<group>"; };
+		BE9267C318DFA8B000E4FDE1 /* SMPOpeningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPOpeningVC.h; sourceTree = "<group>"; };
+		BE9267C418DFA8B000E4FDE1 /* SMPOpeningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPOpeningVC.m; sourceTree = "<group>"; };
+		BE9267C618DFA8EB00E4FDE1 /* SMPParablesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPParablesVC.h; sourceTree = "<group>"; };
+		BE9267C718DFA8EB00E4FDE1 /* SMPParablesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPParablesVC.m; sourceTree = "<group>"; };
+		BE9267C918DFA91900E4FDE1 /* SMPLetterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPLetterVC.h; sourceTree = "<group>"; };
+		BE9267CA18DFA91900E4FDE1 /* SMPLetterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPLetterVC.m; sourceTree = "<group>"; };
+		BE9267CF18DFA97100E4FDE1 /* SMPWPCDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPWPCDetailsVC.h; sourceTree = "<group>"; };
+		BE9267D018DFA97100E4FDE1 /* SMPWPCDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPWPCDetailsVC.m; sourceTree = "<group>"; };
+		BE9267D218DFA9AE00E4FDE1 /* SMPParablesDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPParablesDetailsVC.h; sourceTree = "<group>"; };
+		BE9267D318DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPParablesDetailsVC.m; sourceTree = "<group>"; };
+		BE9267D518DFC3E300E4FDE1 /* TriniDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriniDict.h; sourceTree = "<group>"; };
+		BE9267D618DFC3E300E4FDE1 /* TriniDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriniDict.m; sourceTree = "<group>"; };
+		BED3DBDF18E6100000692EEF /* SMPSendSlangVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPSendSlangVC.h; sourceTree = "<group>"; };
+		BED3DBE018E6100000692EEF /* SMPSendSlangVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPSendSlangVC.m; sourceTree = "<group>"; };
+		BEF8FB8F18E6283F008BB7D1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE92678618DFA82B00E4FDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF8FB9018E6283F008BB7D1 /* MessageUI.framework in Frameworks */,
+				BE92678F18DFA82B00E4FDE1 /* CoreGraphics.framework in Frameworks */,
+				BE92679318DFA82B00E4FDE1 /* CoreData.framework in Frameworks */,
+				BE92679118DFA82B00E4FDE1 /* UIKit.framework in Frameworks */,
+				BE92678D18DFA82B00E4FDE1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9267A618DFA82B00E4FDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9267AB18DFA82B00E4FDE1 /* XCTest.framework in Frameworks */,
+				BE9267AE18DFA82B00E4FDE1 /* CoreData.framework in Frameworks */,
+				BE9267AD18DFA82B00E4FDE1 /* UIKit.framework in Frameworks */,
+				BE9267AC18DFA82B00E4FDE1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE92678018DFA82B00E4FDE1 = {
+			isa = PBXGroup;
+			children = (
+				BE92679418DFA82B00E4FDE1 /* Trini Speak */,
+				BE9267B118DFA82B00E4FDE1 /* Trini SpeakTests */,
+				BE92678B18DFA82B00E4FDE1 /* Frameworks */,
+				BE92678A18DFA82B00E4FDE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE92678A18DFA82B00E4FDE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE92678918DFA82B00E4FDE1 /* Trini Speak.app */,
+				BE9267A918DFA82B00E4FDE1 /* Trini SpeakTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE92678B18DFA82B00E4FDE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEF8FB8F18E6283F008BB7D1 /* MessageUI.framework */,
+				BE92678C18DFA82B00E4FDE1 /* Foundation.framework */,
+				BE92678E18DFA82B00E4FDE1 /* CoreGraphics.framework */,
+				BE92679018DFA82B00E4FDE1 /* UIKit.framework */,
+				BE92679218DFA82B00E4FDE1 /* CoreData.framework */,
+				BE9267AA18DFA82B00E4FDE1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE92679418DFA82B00E4FDE1 /* Trini Speak */ = {
+			isa = PBXGroup;
+			children = (
+				BE92679D18DFA82B00E4FDE1 /* SMPAppDelegate.h */,
+				BE92679E18DFA82B00E4FDE1 /* SMPAppDelegate.m */,
+				BE9267D518DFC3E300E4FDE1 /* TriniDict.h */,
+				BE9267D618DFC3E300E4FDE1 /* TriniDict.m */,
+				BE9267C118DFA84A00E4FDE1 /* MainSB.storyboard */,
+				BE9267C318DFA8B000E4FDE1 /* SMPOpeningVC.h */,
+				BE9267C418DFA8B000E4FDE1 /* SMPOpeningVC.m */,
+				BE9267C918DFA91900E4FDE1 /* SMPLetterVC.h */,
+				BE9267CA18DFA91900E4FDE1 /* SMPLetterVC.m */,
+				BE9267C618DFA8EB00E4FDE1 /* SMPParablesVC.h */,
+				BE9267C718DFA8EB00E4FDE1 /* SMPParablesVC.m */,
+				BE9267CF18DFA97100E4FDE1 /* SMPWPCDetailsVC.h */,
+				BE9267D018DFA97100E4FDE1 /* SMPWPCDetailsVC.m */,
+				BE9267D218DFA9AE00E4FDE1 /* SMPParablesDetailsVC.h */,
+				BE9267D318DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m */,
+				BE012EB518E25A6300440131 /* SMPFavoritesVC.h */,
+				BE012EB618E25A6300440131 /* SMPFavoritesVC.m */,
+				BED3DBDF18E6100000692EEF /* SMPSendSlangVC.h */,
+				BED3DBE018E6100000692EEF /* SMPSendSlangVC.m */,
+				BE9267A318DFA82B00E4FDE1 /* Images.xcassets */,
+				BE9267A018DFA82B00E4FDE1 /* Trini_Speak.xcdatamodeld */,
+				BE92679518DFA82B00E4FDE1 /* Supporting Files */,
+			);
+			path = "Trini Speak";
+			sourceTree = "<group>";
+		};
+		BE92679518DFA82B00E4FDE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE6ED57B18E08A57009088E2 /* Trini_Speak.sqlite */,
+				BE92679618DFA82B00E4FDE1 /* Trini Speak-Info.plist */,
+				BE92679718DFA82B00E4FDE1 /* InfoPlist.strings */,
+				BE92679A18DFA82B00E4FDE1 /* main.m */,
+				BE92679C18DFA82B00E4FDE1 /* Trini Speak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE9267B118DFA82B00E4FDE1 /* Trini SpeakTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE9267B718DFA82B00E4FDE1 /* Trini_SpeakTests.m */,
+				BE9267B218DFA82B00E4FDE1 /* Supporting Files */,
+			);
+			path = "Trini SpeakTests";
+			sourceTree = "<group>";
+		};
+		BE9267B218DFA82B00E4FDE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE9267B318DFA82B00E4FDE1 /* Trini SpeakTests-Info.plist */,
+				BE9267B418DFA82B00E4FDE1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE92678818DFA82B00E4FDE1 /* Trini Speak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9267BB18DFA82B00E4FDE1 /* Build configuration list for PBXNativeTarget "Trini Speak" */;
+			buildPhases = (
+				BE92678518DFA82B00E4FDE1 /* Sources */,
+				BE92678618DFA82B00E4FDE1 /* Frameworks */,
+				BE92678718DFA82B00E4FDE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trini Speak";
+			productName = "Trini Speak";
+			productReference = BE92678918DFA82B00E4FDE1 /* Trini Speak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE9267A818DFA82B00E4FDE1 /* Trini SpeakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9267BE18DFA82B00E4FDE1 /* Build configuration list for PBXNativeTarget "Trini SpeakTests" */;
+			buildPhases = (
+				BE9267A518DFA82B00E4FDE1 /* Sources */,
+				BE9267A618DFA82B00E4FDE1 /* Frameworks */,
+				BE9267A718DFA82B00E4FDE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE9267B018DFA82B00E4FDE1 /* PBXTargetDependency */,
+			);
+			name = "Trini SpeakTests";
+			productName = "Trini SpeakTests";
+			productReference = BE9267A918DFA82B00E4FDE1 /* Trini SpeakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE92678118DFA82B00E4FDE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SMP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sylvan Mortimer Price";
+				TargetAttributes = {
+					BE9267A818DFA82B00E4FDE1 = {
+						TestTargetID = BE92678818DFA82B00E4FDE1;
+					};
+				};
+			};
+			buildConfigurationList = BE92678418DFA82B00E4FDE1 /* Build configuration list for PBXProject "Trini Speak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE92678018DFA82B00E4FDE1;
+			productRefGroup = BE92678A18DFA82B00E4FDE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE92678818DFA82B00E4FDE1 /* Trini Speak */,
+				BE9267A818DFA82B00E4FDE1 /* Trini SpeakTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE92678718DFA82B00E4FDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE92679918DFA82B00E4FDE1 /* InfoPlist.strings in Resources */,
+				BE9267A418DFA82B00E4FDE1 /* Images.xcassets in Resources */,
+				BE9267C218DFA84A00E4FDE1 /* MainSB.storyboard in Resources */,
+				BE6ED57C18E08A57009088E2 /* Trini_Speak.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9267A718DFA82B00E4FDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9267B618DFA82B00E4FDE1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE92678518DFA82B00E4FDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE92679B18DFA82B00E4FDE1 /* main.m in Sources */,
+				BE9267C818DFA8EB00E4FDE1 /* SMPParablesVC.m in Sources */,
+				BE9267D418DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m in Sources */,
+				BE9267A218DFA82B00E4FDE1 /* Trini_Speak.xcdatamodeld in Sources */,
+				BE9267CB18DFA91900E4FDE1 /* SMPLetterVC.m in Sources */,
+				BE9267C518DFA8B000E4FDE1 /* SMPOpeningVC.m in Sources */,
+				BE9267D718DFC3E300E4FDE1 /* TriniDict.m in Sources */,
+				BE012EB718E25A6300440131 /* SMPFavoritesVC.m in Sources */,
+				BED3DBE118E6100000692EEF /* SMPSendSlangVC.m in Sources */,
+				BE9267D118DFA97100E4FDE1 /* SMPWPCDetailsVC.m in Sources */,
+				BE92679F18DFA82B00E4FDE1 /* SMPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9267A518DFA82B00E4FDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9267B818DFA82B00E4FDE1 /* Trini_SpeakTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE9267B018DFA82B00E4FDE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE92678818DFA82B00E4FDE1 /* Trini Speak */;
+			targetProxy = BE9267AF18DFA82B00E4FDE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE92679718DFA82B00E4FDE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE92679818DFA82B00E4FDE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BE9267B418DFA82B00E4FDE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE9267B518DFA82B00E4FDE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE9267B918DFA82B00E4FDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE9267BA18DFA82B00E4FDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE9267BC18DFA82B00E4FDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trini Speak/Trini Speak-Prefix.pch";
+				INFOPLIST_FILE = "Trini Speak/Trini Speak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE9267BD18DFA82B00E4FDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trini Speak/Trini Speak-Prefix.pch";
+				INFOPLIST_FILE = "Trini Speak/Trini Speak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BE9267BF18DFA82B00E4FDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trini Speak.app/Trini Speak";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trini Speak/Trini Speak-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Trini SpeakTests/Trini SpeakTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BE9267C018DFA82B00E4FDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trini Speak.app/Trini Speak";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trini Speak/Trini Speak-Prefix.pch";
+				INFOPLIST_FILE = "Trini SpeakTests/Trini SpeakTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE92678418DFA82B00E4FDE1 /* Build configuration list for PBXProject "Trini Speak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9267B918DFA82B00E4FDE1 /* Debug */,
+				BE9267BA18DFA82B00E4FDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9267BB18DFA82B00E4FDE1 /* Build configuration list for PBXNativeTarget "Trini Speak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9267BC18DFA82B00E4FDE1 /* Debug */,
+				BE9267BD18DFA82B00E4FDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9267BE18DFA82B00E4FDE1 /* Build configuration list for PBXNativeTarget "Trini SpeakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9267BF18DFA82B00E4FDE1 /* Debug */,
+				BE9267C018DFA82B00E4FDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE9267A018DFA82B00E4FDE1 /* Trini_Speak.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE9267A118DFA82B00E4FDE1 /* Trini_Speak.xcdatamodel */,
+			);
+			currentVersion = BE9267A118DFA82B00E4FDE1 /* Trini_Speak.xcdatamodel */;
+			path = Trini_Speak.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE92678118DFA82B00E4FDE1 /* Project object */;
+}
