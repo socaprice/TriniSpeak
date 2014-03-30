@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3836225C-6535-4561-B4FC-1BCC28AEE3EB</string>
+	<string>1B416F9A-EAAF-4A7A-A493-18F42E31D3C8</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Trini Speak</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CE5374E9-2A34-4B9E-ABDE-33D0B1B64329</key>
-		<string>https://github.com/socaprice/SMPCode.git</string>
+		<key>33CABEFD-6A98-4013-AF12-750A6DEFA2A6</key>
+		<string>https://github.com/socaprice/TriniSpeak.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Trini Speak/Trini Speak.xcodeproj/project.xcworkspace</string>
+	<string>Trini Speak.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CE5374E9-2A34-4B9E-ABDE-33D0B1B64329</key>
-		<string>../../..</string>
+		<key>33CABEFD-6A98-4013-AF12-750A6DEFA2A6</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/socaprice/SMPCode.git</string>
+	<string>https://github.com/socaprice/TriniSpeak.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CE5374E9-2A34-4B9E-ABDE-33D0B1B64329</string>
+	<string>33CABEFD-6A98-4013-AF12-750A6DEFA2A6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CE5374E9-2A34-4B9E-ABDE-33D0B1B64329</string>
+			<string>33CABEFD-6A98-4013-AF12-750A6DEFA2A6</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SMPCode</string>
+			<string>TriniSpeak</string>
 		</dict>
 	</array>
 </dict>
