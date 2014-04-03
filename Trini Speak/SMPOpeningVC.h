@@ -16,8 +16,6 @@
 - (IBAction)btnWords:(UIButton *)sender;
 - (IBAction)btnPhrases:(UIButton *)sender;
 - (IBAction)btnCarnival:(UIButton *)sender;
-- (IBAction)btnChristmas:(UIButton *)sender;
 - (IBAction)btnParables:(UIButton *)sender;
 
-- (IBAction)btnButton:(UIButton *)sender;
 @end

@@ -7,7 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE012EB718E25A6300440131 /* SMPFavoritesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE012EB618E25A6300440131 /* SMPFavoritesVC.m */; };
+		BE20C54E18E7B82C00D7EB53 /* SMPSendUsSlangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE20C54D18E7B82C00D7EB53 /* SMPSendUsSlangVC.m */; };
+		BE20C55018E7BE1800D7EB53 /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE20C54F18E7BE1800D7EB53 /* home2.png */; };
+		BE20C55218E7BE5B00D7EB53 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = BE20C55118E7BE5B00D7EB53 /* send.png */; };
+		BE20C55418E7BE9800D7EB53 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = BE20C55318E7BE9800D7EB53 /* star.png */; };
+		BE20C55618E7BF2100D7EB53 /* reply.png in Resources */ = {isa = PBXBuildFile; fileRef = BE20C55518E7BF2100D7EB53 /* reply.png */; };
+		BE20C55918E7C42500D7EB53 /* SMPMyFavoritesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE20C55818E7C42500D7EB53 /* SMPMyFavoritesVC.m */; };
+		BE20C55C18E7C87700D7EB53 /* SMPTTTidbitsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE20C55B18E7C87700D7EB53 /* SMPTTTidbitsVC.m */; };
+		BE20C55F18E7CA4300D7EB53 /* SMPTTGalleryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE20C55E18E7CA4300D7EB53 /* SMPTTGalleryVC.m */; };
+		BE2C14D018E89B30006C363A /* 02-redo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2C14CB18E89B30006C363A /* 02-redo.png */; };
+		BE2C14D118E89B30006C363A /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2C14CC18E89B30006C363A /* 18-envelope.png */; };
+		BE2C14D218E89B30006C363A /* 28-star.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2C14CD18E89B30006C363A /* 28-star.png */; };
+		BE2C14D318E89B30006C363A /* 42-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2C14CE18E89B30006C363A /* 42-photos.png */; };
+		BE2C14D418E89B30006C363A /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2C14CF18E89B30006C363A /* 53-house.png */; };
+		BE2C14D618E89D33006C363A /* 23-bird.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2C14D518E89D33006C363A /* 23-bird.png */; };
+		BE3E464618EA010E007890D7 /* TriniSpeak@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3E464518EA010E007890D7 /* TriniSpeak@2x.png */; };
+		BE3E464818EA0118007890D7 /* TriniSpeak.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3E464718EA0118007890D7 /* TriniSpeak.png */; };
 		BE6ED57C18E08A57009088E2 /* Trini_Speak.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BE6ED57B18E08A57009088E2 /* Trini_Speak.sqlite */; };
 		BE92678D18DFA82B00E4FDE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE92678C18DFA82B00E4FDE1 /* Foundation.framework */; };
 		BE92678F18DFA82B00E4FDE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE92678E18DFA82B00E4FDE1 /* CoreGraphics.framework */; };
@@ -31,7 +46,6 @@
 		BE9267D118DFA97100E4FDE1 /* SMPWPCDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267D018DFA97100E4FDE1 /* SMPWPCDetailsVC.m */; };
 		BE9267D418DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267D318DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m */; };
 		BE9267D718DFC3E300E4FDE1 /* TriniDict.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9267D618DFC3E300E4FDE1 /* TriniDict.m */; };
-		BED3DBE118E6100000692EEF /* SMPSendSlangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BED3DBE018E6100000692EEF /* SMPSendSlangVC.m */; };
 		BEF8FB9018E6283F008BB7D1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF8FB8F18E6283F008BB7D1 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +60,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE012EB518E25A6300440131 /* SMPFavoritesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPFavoritesVC.h; sourceTree = "<group>"; };
-		BE012EB618E25A6300440131 /* SMPFavoritesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPFavoritesVC.m; sourceTree = "<group>"; };
+		BE20C54C18E7B82C00D7EB53 /* SMPSendUsSlangVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPSendUsSlangVC.h; sourceTree = "<group>"; };
+		BE20C54D18E7B82C00D7EB53 /* SMPSendUsSlangVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPSendUsSlangVC.m; sourceTree = "<group>"; };
+		BE20C54F18E7BE1800D7EB53 /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2.png; sourceTree = "<group>"; };
+		BE20C55118E7BE5B00D7EB53 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		BE20C55318E7BE9800D7EB53 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		BE20C55518E7BF2100D7EB53 /* reply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reply.png; sourceTree = "<group>"; };
+		BE20C55718E7C42500D7EB53 /* SMPMyFavoritesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPMyFavoritesVC.h; sourceTree = "<group>"; };
+		BE20C55818E7C42500D7EB53 /* SMPMyFavoritesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPMyFavoritesVC.m; sourceTree = "<group>"; };
+		BE20C55A18E7C87700D7EB53 /* SMPTTTidbitsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPTTTidbitsVC.h; sourceTree = "<group>"; };
+		BE20C55B18E7C87700D7EB53 /* SMPTTTidbitsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPTTTidbitsVC.m; sourceTree = "<group>"; };
+		BE20C55D18E7CA4300D7EB53 /* SMPTTGalleryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPTTGalleryVC.h; sourceTree = "<group>"; };
+		BE20C55E18E7CA4300D7EB53 /* SMPTTGalleryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPTTGalleryVC.m; sourceTree = "<group>"; };
+		BE2C14CB18E89B30006C363A /* 02-redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-redo.png"; sourceTree = "<group>"; };
+		BE2C14CC18E89B30006C363A /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
+		BE2C14CD18E89B30006C363A /* 28-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "28-star.png"; sourceTree = "<group>"; };
+		BE2C14CE18E89B30006C363A /* 42-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "42-photos.png"; sourceTree = "<group>"; };
+		BE2C14CF18E89B30006C363A /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
+		BE2C14D518E89D33006C363A /* 23-bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "23-bird.png"; sourceTree = "<group>"; };
+		BE3E464518EA010E007890D7 /* TriniSpeak@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TriniSpeak@2x.png"; sourceTree = "<group>"; };
+		BE3E464718EA0118007890D7 /* TriniSpeak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TriniSpeak.png; sourceTree = "<group>"; };
 		BE6ED57B18E08A57009088E2 /* Trini_Speak.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trini_Speak.sqlite; sourceTree = "<group>"; };
 		BE92678918DFA82B00E4FDE1 /* Trini Speak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trini Speak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE92678C18DFA82B00E4FDE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,8 +112,6 @@
 		BE9267D318DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPParablesDetailsVC.m; sourceTree = "<group>"; };
 		BE9267D518DFC3E300E4FDE1 /* TriniDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriniDict.h; sourceTree = "<group>"; };
 		BE9267D618DFC3E300E4FDE1 /* TriniDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriniDict.m; sourceTree = "<group>"; };
-		BED3DBDF18E6100000692EEF /* SMPSendSlangVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPSendSlangVC.h; sourceTree = "<group>"; };
-		BED3DBE018E6100000692EEF /* SMPSendSlangVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPSendSlangVC.m; sourceTree = "<group>"; };
 		BEF8FB8F18E6283F008BB7D1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -162,10 +192,14 @@
 				BE9267D018DFA97100E4FDE1 /* SMPWPCDetailsVC.m */,
 				BE9267D218DFA9AE00E4FDE1 /* SMPParablesDetailsVC.h */,
 				BE9267D318DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m */,
-				BE012EB518E25A6300440131 /* SMPFavoritesVC.h */,
-				BE012EB618E25A6300440131 /* SMPFavoritesVC.m */,
-				BED3DBDF18E6100000692EEF /* SMPSendSlangVC.h */,
-				BED3DBE018E6100000692EEF /* SMPSendSlangVC.m */,
+				BE20C55718E7C42500D7EB53 /* SMPMyFavoritesVC.h */,
+				BE20C55818E7C42500D7EB53 /* SMPMyFavoritesVC.m */,
+				BE20C54C18E7B82C00D7EB53 /* SMPSendUsSlangVC.h */,
+				BE20C54D18E7B82C00D7EB53 /* SMPSendUsSlangVC.m */,
+				BE20C55A18E7C87700D7EB53 /* SMPTTTidbitsVC.h */,
+				BE20C55B18E7C87700D7EB53 /* SMPTTTidbitsVC.m */,
+				BE20C55D18E7CA4300D7EB53 /* SMPTTGalleryVC.h */,
+				BE20C55E18E7CA4300D7EB53 /* SMPTTGalleryVC.m */,
 				BE9267A318DFA82B00E4FDE1 /* Images.xcassets */,
 				BE9267A018DFA82B00E4FDE1 /* Trini_Speak.xcdatamodeld */,
 				BE92679518DFA82B00E4FDE1 /* Supporting Files */,
@@ -176,6 +210,18 @@
 		BE92679518DFA82B00E4FDE1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE3E464718EA0118007890D7 /* TriniSpeak.png */,
+				BE3E464518EA010E007890D7 /* TriniSpeak@2x.png */,
+				BE2C14CB18E89B30006C363A /* 02-redo.png */,
+				BE2C14CC18E89B30006C363A /* 18-envelope.png */,
+				BE2C14CD18E89B30006C363A /* 28-star.png */,
+				BE2C14D518E89D33006C363A /* 23-bird.png */,
+				BE2C14CE18E89B30006C363A /* 42-photos.png */,
+				BE2C14CF18E89B30006C363A /* 53-house.png */,
+				BE20C54F18E7BE1800D7EB53 /* home2.png */,
+				BE20C55518E7BF2100D7EB53 /* reply.png */,
+				BE20C55318E7BE9800D7EB53 /* star.png */,
+				BE20C55118E7BE5B00D7EB53 /* send.png */,
 				BE6ED57B18E08A57009088E2 /* Trini_Speak.sqlite */,
 				BE92679618DFA82B00E4FDE1 /* Trini Speak-Info.plist */,
 				BE92679718DFA82B00E4FDE1 /* InfoPlist.strings */,
@@ -279,10 +325,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3E464818EA0118007890D7 /* TriniSpeak.png in Resources */,
+				BE2C14D118E89B30006C363A /* 18-envelope.png in Resources */,
+				BE20C55618E7BF2100D7EB53 /* reply.png in Resources */,
 				BE92679918DFA82B00E4FDE1 /* InfoPlist.strings in Resources */,
 				BE9267A418DFA82B00E4FDE1 /* Images.xcassets in Resources */,
 				BE9267C218DFA84A00E4FDE1 /* MainSB.storyboard in Resources */,
+				BE2C14D618E89D33006C363A /* 23-bird.png in Resources */,
+				BE2C14D218E89B30006C363A /* 28-star.png in Resources */,
+				BE3E464618EA010E007890D7 /* TriniSpeak@2x.png in Resources */,
+				BE2C14D018E89B30006C363A /* 02-redo.png in Resources */,
 				BE6ED57C18E08A57009088E2 /* Trini_Speak.sqlite in Resources */,
+				BE2C14D418E89B30006C363A /* 53-house.png in Resources */,
+				BE2C14D318E89B30006C363A /* 42-photos.png in Resources */,
+				BE20C55418E7BE9800D7EB53 /* star.png in Resources */,
+				BE20C55018E7BE1800D7EB53 /* home2.png in Resources */,
+				BE20C55218E7BE5B00D7EB53 /* send.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,16 +360,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE92679B18DFA82B00E4FDE1 /* main.m in Sources */,
+				BE20C55F18E7CA4300D7EB53 /* SMPTTGalleryVC.m in Sources */,
 				BE9267C818DFA8EB00E4FDE1 /* SMPParablesVC.m in Sources */,
 				BE9267D418DFA9AE00E4FDE1 /* SMPParablesDetailsVC.m in Sources */,
 				BE9267A218DFA82B00E4FDE1 /* Trini_Speak.xcdatamodeld in Sources */,
 				BE9267CB18DFA91900E4FDE1 /* SMPLetterVC.m in Sources */,
 				BE9267C518DFA8B000E4FDE1 /* SMPOpeningVC.m in Sources */,
 				BE9267D718DFC3E300E4FDE1 /* TriniDict.m in Sources */,
-				BE012EB718E25A6300440131 /* SMPFavoritesVC.m in Sources */,
-				BED3DBE118E6100000692EEF /* SMPSendSlangVC.m in Sources */,
+				BE20C55918E7C42500D7EB53 /* SMPMyFavoritesVC.m in Sources */,
+				BE20C54E18E7B82C00D7EB53 /* SMPSendUsSlangVC.m in Sources */,
 				BE9267D118DFA97100E4FDE1 /* SMPWPCDetailsVC.m in Sources */,
 				BE92679F18DFA82B00E4FDE1 /* SMPAppDelegate.m in Sources */,
+				BE20C55C18E7C87700D7EB53 /* SMPTTTidbitsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +486,11 @@
 		BE9267BC18DFA82B00E4FDE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trini Speak/Trini Speak-Prefix.pch";
 				INFOPLIST_FILE = "Trini Speak/Trini Speak-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,11 +499,11 @@
 		BE9267BD18DFA82B00E4FDE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trini Speak/Trini Speak-Prefix.pch";
 				INFOPLIST_FILE = "Trini Speak/Trini Speak-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -465,6 +525,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Trini SpeakTests/Trini SpeakTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -483,6 +544,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trini Speak/Trini Speak-Prefix.pch";
 				INFOPLIST_FILE = "Trini SpeakTests/Trini SpeakTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

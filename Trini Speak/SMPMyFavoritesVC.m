@@ -1,20 +1,18 @@
 //
-//  SMPFavoritesVC.m
+//  SMPMyFavoritesVC.m
 //  Trini Speak
 //
-//  Created by Sylvan Price on 2014-03-25.
+//  Created by Sylvan Price on 2014-03-29.
 //  Copyright (c) 2014 Sylvan Mortimer Price. All rights reserved.
 //
 
-#import "SMPFavoritesVC.h"
+#import "SMPMyFavoritesVC.h"
 
-@interface SMPFavoritesVC ()
+@interface SMPMyFavoritesVC ()
 
 @end
 
-@implementation SMPFavoritesVC
-
-@synthesize fetchedResultsController = _fetchedResultsController;
+@implementation SMPMyFavoritesVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,23 +21,6 @@
         // Custom initialization
     }
     return self;
-}
-
--(void)letterCheck: (int) numValue{
-    
-    if ([self.fetchedResultsController fetchedObjects].count <= numValue) {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message:@"There are no Favorites stored." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        
-        [alert show];
-    }else{
-        TriniDict *slang = [[self.fetchedResultsController fetchedObjects] objectAtIndex:numValue];
-        _txtMeaning.text = slang.eEnglish;
-        _forRecToUpdate = slang.aNum;
-    }
-}
-
-- (IBAction)btnRemoveFromFav:(UIButton *)sender {
-    [self removeFromFav:_forRecToUpdate];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -59,7 +40,6 @@
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error!" message:@"For some reason there was a problem connecting to the database. Please restart the app and try again." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,19 +48,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)letterCheck: (int) numValue{
+    
+    if ([self.fetchedResultsController fetchedObjects].count <= numValue) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message:@"There are no Favorites stored." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alert show];
+    }else{
+        TriniDict *slang = [[self.fetchedResultsController fetchedObjects] objectAtIndex:numValue];
+        _txtMeaning.text = slang.eEnglish;
+        _forRecToUpdate = slang.aNum;
+    }
 }
-*/
 
-#pragma mark -
-#pragma mark PickerView Controls section
+//#pragma mark -
+//#pragma mark PickerView Controls section
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return 1;
 }
@@ -125,8 +107,7 @@
                                               inManagedObjectContext:[self managedObjectContext]];
     [fetchRequest setEntity:entity];
     
-//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"cCategory == 'WORD'"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"fFav == 1"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"fFav == YES"];
     
     [fetchRequest setPredicate:predicate];
     
@@ -139,10 +120,10 @@
     _fetchedResultsController = [[NSFetchedResultsController alloc]initWithFetchRequest:fetchRequest managedObjectContext:[self managedObjectContext] sectionNameKeyPath:@"bLetter" cacheName:nil];
     
     return _fetchedResultsController;
-    
 }
+
 #pragma mark
-#pragma Add To Favorites section
+#pragma Remove From Favorites section
 -(void) removeFromFav:favCriteria{
     NSError *error;
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -165,6 +146,26 @@
     }
 }
 
+- (IBAction)btnRemoveFromFav:(UIButton *)sender {
+    [self removeFromFav:_forRecToUpdate];
+    NSError *error;
+    
+    if(![self.fetchedResultsController performFetch:&error])
+    {
+        NSLog(@"Error: %@", [error localizedDescription]);
+    }
+    [self.pickerView reloadAllComponents];
+    [[self.fetchedResultsController fetchedObjects] count];
+    NSLog(@"The count is %lu",(unsigned long)[[self.fetchedResultsController fetchedObjects] count]-1);
+    [self letterCheck:0];
+    //_txtMeaning.text = @" ";
+   // if (self.pickerView != nil) {
+   //     [self.pickerView reloadAllComponents];
+   // }*/
+    //assert(self.pickerView != nil);  [self.pickerView reloadAllComponents];
+}
+
 - (IBAction)btnHome:(UIButton *)sender {
 }
+
 @end

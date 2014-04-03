@@ -14,9 +14,6 @@
 
 @implementation SMPWPCDetailsVC
 
-@synthesize fetchedResultsController = _fetchedResultsController;
-//@synthesize forRecToUpdate = _forRecToUpdate;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,7 +33,6 @@
         TriniDict *slang = [[self.fetchedResultsController fetchedObjects] objectAtIndex:numValue];
         _txtMeaning.text = slang.eEnglish;
         _forRecToUpdate = slang.aNum;
-        NSLog(@"The Rec to update is: %@",_forRecToUpdate);
     }
 }
 

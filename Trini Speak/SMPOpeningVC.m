@@ -70,16 +70,9 @@
     _textForLabelCategory = @"CARNIVAL";
 }
 
-- (IBAction)btnChristmas:(UIButton *)sender {
-    _textForLabelCategory = @"CHRISTMAS";
-}
-
 - (IBAction)btnParables:(UIButton *)sender {
     _textForLabelCategory = @"PARABLES";
 }
 
 
-- (IBAction)btnButton:(UIButton *)sender {
-    //Do nothing
-}
 @end
