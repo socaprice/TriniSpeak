@@ -49,6 +49,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _txtViewParableDetail.delegate = self;// Prevents the keyboard from popping up when the user touches the meaning
     [self configureView];
 }
 
@@ -56,6 +57,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// Prevents the keyboard from popping up when the user touches the meaning
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    return NO;
 }
 
 - (IBAction)btnBack:(UIButton *)sender {

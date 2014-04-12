@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TriniDict.h"
 
-@interface SMPWPCDetailsVC : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface SMPWPCDetailsVC : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextViewDelegate>
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;

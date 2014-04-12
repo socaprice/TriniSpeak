@@ -52,10 +52,9 @@
     NSError *error = nil;
     if (![[self fetchedResultsController]performFetch:&error]) {
         // Handle the error
-        NSLog(@"Error! %@",error);
-        abort();
-    }
-    
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error!" message:@"For some reason there was a problem connecting to the database. Please restart the app and try again." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }  
 }
 
 - (void)didReceiveMemoryWarning

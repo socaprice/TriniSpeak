@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SMPParablesVC.h"
 
-@interface SMPParablesDetailsVC : UIViewController
+@interface SMPParablesDetailsVC : UIViewController <UITextViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextView *txtViewParableDetail;
 - (IBAction)btnBack:(UIButton *)sender;

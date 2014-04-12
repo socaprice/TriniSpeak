@@ -5,31 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>79172705-6335-44EF-A395-6D4FCD1E839E</string>
-=======
-	<string>1B416F9A-EAAF-4A7A-A493-18F42E31D3C8</string>
->>>>>>> FETCH_HEAD
+	<string>5180B27F-5681-44CE-A7DC-EA5CB6DD46CA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Trini Speak</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-<<<<<<< HEAD
-		<key>750E67D6-8A68-49A8-876F-92E76E21FFB6</key>
-=======
-		<key>33CABEFD-6A98-4013-AF12-750A6DEFA2A6</key>
->>>>>>> FETCH_HEAD
+		<key>7A32B327-7911-4E72-9FD9-AF34DD3F8028</key>
 		<string>https://github.com/socaprice/TriniSpeak.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Trini Speak.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-<<<<<<< HEAD
-		<key>750E67D6-8A68-49A8-876F-92E76E21FFB6</key>
-=======
-		<key>33CABEFD-6A98-4013-AF12-750A6DEFA2A6</key>
->>>>>>> FETCH_HEAD
+		<key>7A32B327-7911-4E72-9FD9-AF34DD3F8028</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -37,22 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-<<<<<<< HEAD
-	<string>750E67D6-8A68-49A8-876F-92E76E21FFB6</string>
-=======
-	<string>33CABEFD-6A98-4013-AF12-750A6DEFA2A6</string>
->>>>>>> FETCH_HEAD
+	<string>7A32B327-7911-4E72-9FD9-AF34DD3F8028</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-<<<<<<< HEAD
-			<string>750E67D6-8A68-49A8-876F-92E76E21FFB6</string>
-=======
-			<string>33CABEFD-6A98-4013-AF12-750A6DEFA2A6</string>
->>>>>>> FETCH_HEAD
+			<string>7A32B327-7911-4E72-9FD9-AF34DD3F8028</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TriniSpeak</string>
 		</dict>

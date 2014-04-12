@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SMPTTGalleryDetailsVC.h"
 
 @interface SMPTTGalleryVC : UIViewController
+{
+    NSArray *list;
+}
+
+@property (strong, nonatomic) NSArray *list;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

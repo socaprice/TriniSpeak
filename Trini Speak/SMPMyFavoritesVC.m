@@ -9,6 +9,9 @@
 #import "SMPMyFavoritesVC.h"
 
 @interface SMPMyFavoritesVC ()
+{
+    int rowValue;
+}
 
 @end
 
@@ -23,8 +26,36 @@
     return self;
 }
 
+// Prevents the keyboard from popping up when the user touches the meaning field
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    return NO;
+}
+
+-(void)letterCheck:(int)numValue{
+    
+    if ([self.fetchedResultsController fetchedObjects].count <= numValue) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message:@"There are no Favorites stored." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alert show];
+    }else{
+        TriniDict *slang = [[self.fetchedResultsController fetchedObjects] objectAtIndex:numValue];
+        _txtMeaning.text = slang.eEnglish;
+        _forRecToUpdate = slang.aNum;
+    }
+}
+
 -(void)viewWillAppear:(BOOL)animated{
-    [self letterCheck:0];
+    
+    NSError *error;
+    if(![self.fetchedResultsController performFetch:&error])
+    {
+        NSLog(@"Error: %@", [error localizedDescription]);
+    }
+    
+    [self.pickerView reloadAllComponents];
+    
+    [self letterCheck:(int)0];
 }
 
 - (void)viewDidLoad
@@ -33,6 +64,10 @@
     //Passes the managedObjectContext along from the AppDelegate
     id delegate = [[UIApplication sharedApplication] delegate];
     self.managedObjectContext = [delegate managedObjectContext];
+    
+    _txtMeaning.delegate = self; //Allows me to kill the keyboard from popping up if the user touches the meaning
+
+    [self.pickerView reloadAllComponents];
     
     NSError *error = nil;
     if (![[self fetchedResultsController]performFetch:&error]) {
@@ -48,37 +83,28 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)letterCheck: (int) numValue{
-    
-    if ([self.fetchedResultsController fetchedObjects].count <= numValue) {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message:@"There are no Favorites stored." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        
-        [alert show];
-    }else{
-        TriniDict *slang = [[self.fetchedResultsController fetchedObjects] objectAtIndex:numValue];
-        _txtMeaning.text = slang.eEnglish;
-        _forRecToUpdate = slang.aNum;
-    }
-}
-
-//#pragma mark -
-//#pragma mark PickerView Controls section
+#pragma mark -
+#pragma mark PickerView Controls section
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return 1;
 }
+
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     return [[self.fetchedResultsController fetchedObjects] count];
 }
+
+
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     
     // Display the Words we've fetched on the picker
     TriniDict *slang = [[self.fetchedResultsController fetchedObjects] objectAtIndex:row];
     return slang.dTrini;
-    
-    //Another way to do it -- return [[[self.fetchedResultsController fetchedObjects] objectAtIndex:row]valueForKey:@"dTrini"];
 }
+
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
+    NSLog(@"hello?? %d", [pickerView selectedRowInComponent:0]);
+    rowValue = [_pickerView selectedRowInComponent:0];
     [self letterCheck:(int)row];
 }
 
@@ -107,7 +133,7 @@
                                               inManagedObjectContext:[self managedObjectContext]];
     [fetchRequest setEntity:entity];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"fFav == YES"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"fFav == 1"];
     
     [fetchRequest setPredicate:predicate];
     
@@ -147,22 +173,20 @@
 }
 
 - (IBAction)btnRemoveFromFav:(UIButton *)sender {
-    [self removeFromFav:_forRecToUpdate];
-    NSError *error;
     
+    _txtMeaning.text = @" ";
+    
+    [self removeFromFav:_forRecToUpdate];
+   
+    NSError *error;
     if(![self.fetchedResultsController performFetch:&error])
     {
         NSLog(@"Error: %@", [error localizedDescription]);
     }
+    
     [self.pickerView reloadAllComponents];
-    [[self.fetchedResultsController fetchedObjects] count];
-    NSLog(@"The count is %lu",(unsigned long)[[self.fetchedResultsController fetchedObjects] count]-1);
-    [self letterCheck:0];
-    //_txtMeaning.text = @" ";
-   // if (self.pickerView != nil) {
-   //     [self.pickerView reloadAllComponents];
-   // }*/
-    //assert(self.pickerView != nil);  [self.pickerView reloadAllComponents];
+    [self letterCheck:(int)rowValue];
+    
 }
 
 - (IBAction)btnHome:(UIButton *)sender {

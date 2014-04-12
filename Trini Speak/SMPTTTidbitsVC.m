@@ -27,6 +27,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _txtTidBit.delegate = self;
+}
+
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning

@@ -23,7 +23,13 @@
     return self;
 }
 
--(void)letterCheck: (int) numValue{
+// Prevents the keyboard from popping up when the user touches the meaning field
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    return NO;
+}
+
+-(void)letterCheck:(int)numValue{
     
     if ([self.fetchedResultsController fetchedObjects].count <= numValue) {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:_lblCategoryText message:@"The letter chosen does not have entries that fit the above category." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -37,7 +43,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    [self letterCheck:0];
+    [self letterCheck:(int)0];
 }
 
 - (void)viewDidLoad
@@ -49,6 +55,8 @@
     //Passes the managedObjectContext along from the AppDelegate
     id delegate = [[UIApplication sharedApplication] delegate];
     self.managedObjectContext = [delegate managedObjectContext];
+    
+    _txtMeaning.delegate = self;// Prevents the keyboard from popping up when the user touches the meaning firld
     
     NSError *error = nil;
     if (![[self fetchedResultsController]performFetch:&error]) {
@@ -79,8 +87,6 @@
     // Display the Words we've fetched on the picker
     TriniDict *slang = [[self.fetchedResultsController fetchedObjects] objectAtIndex:row];
     return slang.dTrini;
-    
-    //Another way to do it -- return [[[self.fetchedResultsController fetchedObjects] objectAtIndex:row]valueForKey:@"dTrini"];
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
@@ -128,12 +134,6 @@
     
 }
 
-- (IBAction)btnBack:(UIButton *)sender {
-}
-
-- (IBAction)btnHome:(UIButton *)sender {
-}
-
 #pragma mark
 #pragma Add To Favorites section
 -(void) addToFav:favCriteria{
@@ -156,6 +156,12 @@
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error!" message:@"For some reason there was a problem connecting to the database. Please restart the app and try again." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
+}
+
+- (IBAction)btnBack:(UIButton *)sender {
+}
+
+- (IBAction)btnHome:(UIButton *)sender {
 }
 
 - (IBAction)btnAddToFavs:(UIButton *)sender {

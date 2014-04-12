@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SMPTTTidbitsVC : UIViewController
+@interface SMPTTTidbitsVC : UIViewController <UITextViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextView *txtTidBit;
 @end
